@@ -19,12 +19,12 @@ Bmob.initialize("你的Application ID", "你的REST API Key");
 this.ChatAi = wx.Bmob.ChatAI()
 
 // 发送消息
- let datas = {
+let datas = {
       "messages": [{
         "content": "消息内容",
         "role": "user"
       }],
-      "session": userId // 用户id
+      "session": "userId "// 用户id, 可以通过调用比目的auth登录后获取objectId
 }
 this.ChatAi.send(JSON.stringify(datas))
 
