@@ -1,0 +1,81 @@
+{
+  "_from": "hydrogen-js-sdk",
+  "_id": "hydrogen-js-sdk@2.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-xl2R18TvBTz8C+pRR+HIWaSFgODz4fwXWW/Xvss6ZXtLgdgKREl0awrN99EBpdqEKMf9IYTpNMIuW04yxtgxLw==",
+  "_location": "/hydrogen-js-sdk",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "hydrogen-js-sdk",
+    "name": "hydrogen-js-sdk",
+    "escapedName": "hydrogen-js-sdk",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmmirror.com/hydrogen-js-sdk/-/hydrogen-js-sdk-2.5.0.tgz",
+  "_shasum": "5fb4e3d14aca7fd831b07b35e887d13369616777",
+  "_spec": "hydrogen-js-sdk",
+  "_where": "D:\\github\\bmob77\\wechatapp-demo-master",
+  "author": {
+    "name": "Bmob"
+  },
+  "bugs": {
+    "url": "https://github.com/bmob/hydrogen-js-sdk/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "eventsource-parser": "^1.0.0",
+    "node.extend": "^2.0.0"
+  },
+  "deprecated": false,
+  "description": "本SDK基于es6开发，致力打造基于前端混合开发需求，支持微信小程序、H5、快应用、游戏Cocos、混合App等平台, 整个SDK，就dist目录下Bmob.*.js 这个文件即可使用全部功能，请使用最新版本。",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "html-webpack-plugin": "^2.30.1",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^3.12.0",
+    "webpack-dev-server": "^2.11.2"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "homepage": "https://github.com/bmob/hydrogen-js-sdk#readme",
+  "keywords": [
+    "Bmob"
+  ],
+  "license": "ISC",
+  "main": "./index.js",
+  "name": "hydrogen-js-sdk",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmob/hydrogen-js-sdk.git"
+  },
+  "scripts": {
+    "build": "webpack --config config/prod.env.js",
+    "dev": "webpack-dev-server --config config/dev.env.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --config config/prod.env.js"
+  },
+  "typings": "./index.d.ts",
+  "version": "2.5.0"
+}

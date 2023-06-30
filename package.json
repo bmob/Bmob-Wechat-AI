@@ -1,0 +1,15 @@
+{
+  "name": "bmob-wechat-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "mp-html": "^2.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bmob77",
+  "license": "ISC"
+}

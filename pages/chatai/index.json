@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Bmob AI 问答",
+  "usingComponents": {
+    "mp-html": "mp-html"
+  }
+}

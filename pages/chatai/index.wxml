@@ -1,0 +1,29 @@
+<!--pages/interface/chatroom/chatroom.wxml-->
+<view class="page-wrap">
+  <scroll-view class="chat-container" scroll-y scroll-into-view="{{lastMessageId}}" scroll-top="9999999999">
+    <view wx:for="{{messages}}" wx:for-item="message" wx:key="id" id="{{message.id}}" class="message {{message.type}}">
+      <view wx:if="{{message.type == 'speak'}}" class="user-message {{message.isMe ? 'me' : 'other'}}">
+        <image class="avatar" wx:key="{{message.isMe?'bmob':'ai'}}"
+          src="/images/{{message.isMe?'bmob':'ai'}}.png" mode="aspectFill"></image>
+        <view class="text">
+          <!-- <view class="nickname">{{message.user.nickName}}</view> -->
+          <view class="content">
+            <mp-html markdown content="{{message.content}}" />
+          </view>
+        </view>
+      </view>
+      <view wx:if="{{message.type == 'system'}}" class="system-message">
+        {{message.content}}
+      </view>
+    </view>
+    <view class="v-fake"></view>
+  </scroll-view>
+  <view class="input-panel">
+    <button class="pic-icon"></button>
+    <view class="send-input-box">
+      <textarea auto-height type="text" value="{{inputContent}}" bindinput="changeInputContent"
+        bindconfirm="sendMessage" style="max-height: 300rpx !important;" cursor-spacing='12'></textarea>
+    </view>
+    <button bindtap="sendMessage" class="send-btn" hover-class="hover">发送</button>
+  </view>
+</view>
