@@ -24,7 +24,7 @@ let datas = {
         "content": "消息内容",
         "role": "user"
       }],
-      "session": "userId "// 用户id, 可以通过调用比目的auth登录后获取objectId
+      "session": "userId"// 用户id, 可以通过调用比目的auth登录后获取objectId
 }
 this.ChatAi.send(JSON.stringify(datas))
 
