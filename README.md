@@ -1,9 +1,13 @@
 # Bmob-Wechat-AI
 Bmob微信小程序AI示例
 
-![Bmob-cWechat-Ai 界面图片](https://upload-images.jianshu.io/upload_images/10949492-69d3187c40b97bbc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-几行代码就可以拥有强大的AI能力：
+
+![Bmob-cWechat-Ai 界面图片](https://mmbiz.qpic.cn/mmbiz_gif/VmjKPdXibAh8XWHYxkIy4vICRIJTJGywT5GVqfSwdDxY5UzgdzTgKU839R96P5WH1VzvHBdDPU2bicoEf1A336yQ/640?wx_fmt=gif&tp=wxpic&wxfrom=5&wx_lazy=1)
+
+
+
+几行代码就可以拥有强大的AI能力，详细文档请看：[Bmob js sdk文档](http://doc.bmobapp.com/data/wechat_app_new/index.html#ai)：
 ```
 // 引入Bmob js sdk
 import Bmob from 'utils/hydrogen-js-sdk/src/lib/app.js'
